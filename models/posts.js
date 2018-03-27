@@ -4,8 +4,8 @@ const postSchema =mongoose.Schema({
    //_id is a conventionn
     //_id is of type mongoose
     _id: mongoose.Schema.Types.ObjectId,
-    title:String,
-    postbody:String
+    postTitle:String,
+    postBody:String
 
 });
 

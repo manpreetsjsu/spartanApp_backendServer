@@ -28,8 +28,8 @@ router.post('/',(req,res,next)=>{
     //creating a new mongoose object that creates an entry into the DB
     const post= new Post({
         _id: new mongoose.Types.ObjectId(),
-        title:req.body.title,
-        postbody:req.body.postbody
+        postTitle:req.body.postTitle,
+        postBody:req.body.postBody
     });
     //save is a method provided by mongoose to be used on mongoose objects,it stores everything in the DB
     //.then is a promise
