@@ -1,0 +1,26 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "A NodeJS based RESTful API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "REST"
+  ],
+  "author": "Arsh Bhatti",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.11",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  }
+}
