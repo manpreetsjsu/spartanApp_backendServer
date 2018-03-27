@@ -1,6 +1,7 @@
 const express= require('express');
 const router=express.Router();
 const Course= require('../../models/courses');
+const mongoose = require('mongoose');
 
 router.get('/',(req,res,next)=>{
    Course
@@ -21,9 +22,9 @@ router.get('/',(req,res,next)=>{
 router.post('/',(req,res,next)=>{
     //getting data for creating a post. This is what the API expects to get from the front end.
     const course= new Course({
-        _id:mongoose.Types.ObjectId(),
+        _id: new mongoose.Types.ObjectId(),
         courseTitle:req.body.courseTitle,
-        courseDescription:req.body.courseTitle
+        courseDescription:req.body.courseDescription
     });
     course
         .save()
