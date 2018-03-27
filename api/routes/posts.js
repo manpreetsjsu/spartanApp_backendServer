@@ -29,26 +29,25 @@ router.post('/',(req,res,next)=>{
     const post= new Post({
         _id: new mongoose.Types.ObjectId(),
         title:req.body.title,
-        body:req.body.postBody
+        postbody:req.body.postbody
     });
     //save is a method provided by mongoose to be used on mongoose objects,it stores everything in the DB
     //.then is a promise
 
-    post
-        .save()
+    post.save()
         .then(result=>{
         console.log("This the post result from the DB",result);
         res.status(201).json({
             message:"Handling POST request to /posts",
             createdPost:result
-
         });
     })
-        .catch(err=>
-            console.log(err));
+        .catch(err=> {
+            console.log(err);
             res.status(500).json({
                 error:err
-            })
+            });
+        });
 });
 
 //for getting a particular post.You are expecting to get the ID of the post encoded

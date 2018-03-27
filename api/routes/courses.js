@@ -1,6 +1,6 @@
 const express= require('express');
 const router=express.Router();
-
+const Course= require('../../models/courses');
 
 router.get('/',(req,res,next)=>{
     res.status(200).json({
@@ -10,14 +10,12 @@ router.get('/',(req,res,next)=>{
 
 router.post('/',(req,res,next)=>{
     //getting data for creating a post. This is what the API expects to get from the front end.
-    const course={
-        title:req.body.title,
-        description:req.body.courseDescription
-    };
-    res.status(201).json({
-        message:"The course has been posted",
-        createdCourse:course
+    const course= new Course({
+        _id:mongoose.Types.ObjectId(),
+        courseTitle:req.body.courseTitle,
+        courseDescription:req.body.courseTitle,
     });
+    course
 });
 
 router.get('/:courseId',(req,res,next)=>{

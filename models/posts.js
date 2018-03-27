@@ -5,7 +5,7 @@ const postSchema =mongoose.Schema({
     //_id is of type mongoose
     _id: mongoose.Schema.Types.ObjectId,
     title:String,
-    body:String
+    postbody:String
 
 });
 
