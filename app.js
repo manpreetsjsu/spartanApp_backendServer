@@ -3,8 +3,11 @@ const app=express();
 const morgan=require('morgan');
 const postsRoutes= require('./api/routes/posts');
 const coursesRoutes=require('./api/routes/courses');
+const usersRoutes= require('./api/routes/user');
 const bodyParser = require('body-parser');
 const mongoose= require('mongoose');
+
+
 
 //The process.env is where the password for mongoose is coming from. It lives in a file called nodemon.json
 mongoose.connect(
@@ -32,7 +35,7 @@ app.use((req,res,next)=>{
         res.header('Access-Control-Allow-Methods','PUT,POST,PATCH,DELETE,GET');
         return res.status(200).json({});
     }
-    next();//to forward all the requests
+    next();//to forward all t   he requests
 });
 
 
@@ -41,7 +44,8 @@ app.use((req,res,next)=>{
 //mentioned handler in the second argument. The first argument is like a filter.
 app.use('/posts',postsRoutes);
 app.use('/courses',coursesRoutes);
-    
+app.use('/users',usersRoutes);
+
 app.use((req,res,next)=>{
     //Error is a constant provided by Node
     const error = new Error('Not found');
@@ -49,6 +53,7 @@ app.use((req,res,next)=>{
     //next forwards the request
     next(error);
 });
+
 
 //this handles errors when some operations fail like anything on the DB side fails
 app.use((error,req,res,next) => {

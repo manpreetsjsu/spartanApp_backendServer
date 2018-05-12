@@ -1,10 +1,10 @@
 const express= require('express');
 const router=express.Router();
-const Course= require('../../models/courses');
+const Subject= require('../../models/courses');
 const mongoose = require('mongoose');
 
 router.get('/',(req,res,next)=>{
-   Course
+   Subject
        .find()
        .exec()
        .then(docs=>{
@@ -21,10 +21,11 @@ router.get('/',(req,res,next)=>{
 
 router.post('/',(req,res,next)=>{
     //getting data for creating a post. This is what the API expects to get from the front end.
-    const course= new Course({
+    const course= new Subject({
         _id: new mongoose.Types.ObjectId(),
-        courseTitle:req.body.courseTitle,
-        courseDescription:req.body.courseDescription
+        name:req.body.name,
+        instructor:req.body.instructor,
+        tutor:req.body.tutor,
     });
     course
         .save()
@@ -43,9 +44,9 @@ router.post('/',(req,res,next)=>{
         })
 });
 
-router.get('/:courseId',(req,res,next)=>{
-    const id=req.params.courseId;
-    Course.findById(id)
+router.get('/:name',(req,res,next)=>{
+    const id=req.params.name;
+    Subject.findById(id)
         .exec()
         .then(doc=>{
             console.log("This is from the database",doc);
@@ -60,17 +61,17 @@ router.get('/:courseId',(req,res,next)=>{
 });
 
 
-router.patch('/:courseId',(req,res,next)=>{
-    const id=req.params.courseId;
+router.patch('/:name',(req,res,next)=>{
+    const id=req.params.name;
     res.status(200).json({
         message:"The Course has been edited",
         id:id
     });
 });
 
-router.delete('/:courseId',(req,res,next)=>{
-    const id=req.params.courseId;
-    Course.remove({_id:id})
+router.delete('/',(req,res,next)=>{
+    const id=req.params.id;
+    Subject.remove()
         .exec()
         .then(result=>{
             res.status(200).json({result});

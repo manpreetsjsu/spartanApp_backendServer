@@ -2,8 +2,10 @@ const mongoose =require('mongoose');
 
 const courseSchema= mongoose.Schema({
    _id:mongoose.Schema.Types.ObjectId,
-    courseTitle:String,
-    courseDescription:String
+    name:String,
+    instructor:String,
+    tutor:String,
+
 });
 
-module.exports=mongoose.model('Course',courseSchema);
+module.exports=mongoose.model('Subject',courseSchema);
