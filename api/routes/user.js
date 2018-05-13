@@ -22,6 +22,7 @@ router.post('/signup',(req,res,next) =>{
                 dob:req.body.dob,
                 email:req.body.email,
                 password:hash,
+                enrolledCourses:[" "]
 
             });
             user.save()
@@ -68,7 +69,8 @@ router.post('/login',(req,res,next) =>{
                 }
                 if(result){
                     return res.status(200).json({
-                        message:'Auth Successful'
+                        message:'Auth Successful',
+                        data:{user}
                     });
                 }
                 res.status(401).json({
