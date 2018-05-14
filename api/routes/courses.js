@@ -45,8 +45,8 @@ router.post('/',(req,res,next)=>{
 });
 
 router.get('/:name',(req,res,next)=>{
-    const id=req.params.name;
-    Subject.findById(id)
+    const name=req.params.name;
+    Subject.findById(name)
         .exec()
         .then(doc=>{
             console.log("This is from the database",doc);
@@ -60,14 +60,6 @@ router.get('/:name',(req,res,next)=>{
         })
 });
 
-
-router.patch('/:name',(req,res,next)=>{
-    const id=req.params.name;
-    res.status(200).json({
-        message:"The Course has been edited",
-        id:id
-    });
-});
 
 router.delete('/',(req,res,next)=>{
     const id=req.params.id;
