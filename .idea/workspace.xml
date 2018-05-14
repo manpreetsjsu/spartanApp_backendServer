@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="632980a9-cab0-4f36-b668-acf90a8dd83d" name="Default" comment="changed the version of the bcrypt to 2.0.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+    <list default="true" id="632980a9-cab0-4f36-b668-acf90a8dd83d" name="Default" comment="Changed models. Delete on /courses deletes everything.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/user.js" afterPath="$PROJECT_DIR$/api/routes/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/users.js" afterPath="$PROJECT_DIR$/models/users.js" />
+>>>>>>> 0c8fdf78d71fb6795fd7122ae9aa0380c74490b2
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +26,13 @@
       <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/users.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="280">
               <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+=======
+            <state relative-caret-position="128">
+              <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="19" />
+>>>>>>> 0c8fdf78d71fb6795fd7122ae9aa0380c74490b2
               <folding />
             </state>
           </provider>
@@ -29,8 +41,13 @@
       <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/routes/user.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="1203">
               <caret line="90" column="17" lean-forward="false" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
+=======
+            <state relative-caret-position="140">
+              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+>>>>>>> 0c8fdf78d71fb6795fd7122ae9aa0380c74490b2
               <folding />
             </state>
           </provider>
@@ -39,8 +56,13 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="2200">
               <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+=======
+            <state relative-caret-position="282">
+              <caret line="46" column="30" lean-forward="true" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+>>>>>>> 0c8fdf78d71fb6795fd7122ae9aa0380c74490b2
               <folding />
             </state>
           </provider>
@@ -49,16 +71,22 @@
       <file leaf-file-name="courses.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/routes/courses.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="2832">
               <caret line="78" column="21" lean-forward="false" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+=======
+            <state relative-caret-position="1184">
+              <caret line="74" column="15" lean-forward="true" selection-start-line="74" selection-start-column="15" selection-end-line="74" selection-end-column="15" />
+>>>>>>> 0c8fdf78d71fb6795fd7122ae9aa0380c74490b2
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="courses.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="courses.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/courses.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="400">
               <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
               <folding />
@@ -91,6 +119,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1160">
               <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="42" />
+=======
+            <state relative-caret-position="160">
+              <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+>>>>>>> 0c8fdf78d71fb6795fd7122ae9aa0380c74490b2
               <folding />
             </state>
           </provider>
@@ -128,11 +160,11 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/api/config/passport.js" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/models/users.js" />
-        <option value="$PROJECT_DIR$/api/routes/user.js" />
         <option value="$PROJECT_DIR$/models/courses.js" />
         <option value="$PROJECT_DIR$/api/routes/courses.js" />
+        <option value="$PROJECT_DIR$/models/users.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/api/routes/user.js" />
       </list>
     </option>
   </component>
@@ -244,8 +276,13 @@
       <workItem from="1525892619402" duration="716000" />
       <workItem from="1525899919648" duration="18240000" />
       <workItem from="1526013027889" duration="3376000" />
+<<<<<<< HEAD
       <workItem from="1526061526924" duration="7540000" />
       <workItem from="1526199655091" duration="1288000" />
+=======
+      <workItem from="1526061526924" duration="7602000" />
+      <workItem from="1526197332005" duration="3263000" />
+>>>>>>> 0c8fdf78d71fb6795fd7122ae9aa0380c74490b2
     </task>
     <task id="LOCAL-00001" summary="Fixed the POST request to /posts">
       <created>1522134940473</created>
@@ -268,18 +305,31 @@
       <option name="project" value="LOCAL" />
       <updated>1522137568920</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00004" summary="changed the version of the bcrypt to 2.0.1">
       <created>1526201285373</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
       <updated>1526201285373</updated>
+=======
+    <task id="LOCAL-00004" summary="Changed models. Delete on /courses deletes everything.">
+      <created>1526116207233</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1526116207233</updated>
+>>>>>>> 0c8fdf78d71fb6795fd7122ae9aa0380c74490b2
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="88536000" />
+=======
+    <option name="totallyTimeSpent" value="90573000" />
+>>>>>>> 0c8fdf78d71fb6795fd7122ae9aa0380c74490b2
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
@@ -289,9 +339,13 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2191358" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> 0c8fdf78d71fb6795fd7122ae9aa0380c74490b2
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24261364" sideWeight="0.49702382" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -333,21 +387,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed the POST request to /posts" />
     <MESSAGE value="Fixed the issues in models/courses." />
+<<<<<<< HEAD
     <MESSAGE value="changed the version of the bcrypt to 2.0.1" />
     <option name="LAST_COMMIT_MESSAGE" value="changed the version of the bcrypt to 2.0.1" />
+=======
+    <MESSAGE value="Changed models. Delete on /courses deletes everything." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed models. Delete on /courses deletes everything." />
+>>>>>>> 0c8fdf78d71fb6795fd7122ae9aa0380c74490b2
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/routes/posts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/routes/courses.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
@@ -631,38 +683,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/routes/posts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1160">
-          <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nodemon.json">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="1160">
+          <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="42" />
+=======
         <state relative-caret-position="32">
           <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/config/passport.js" />
-    <entry file="file://$PROJECT_DIR$/models/posts.js">
+    <entry file="file://$PROJECT_DIR$/api/routes/courses.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        <state relative-caret-position="1184">
+          <caret line="74" column="15" lean-forward="true" selection-start-line="74" selection-start-column="15" selection-end-line="74" selection-end-column="15" />
+>>>>>>> 0c8fdf78d71fb6795fd7122ae9aa0380c74490b2
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/nodemon.json">
+=======
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2200">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        <state relative-caret-position="282">
+          <caret line="46" column="30" lean-forward="true" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/users.js">
+>>>>>>> 0c8fdf78d71fb6795fd7122ae9aa0380c74490b2
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="240">
+          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+=======
+        <state relative-caret-position="-512">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 0c8fdf78d71fb6795fd7122ae9aa0380c74490b2
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="2200">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+=======
+        <state relative-caret-position="448">
+          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+>>>>>>> 0c8fdf78d71fb6795fd7122ae9aa0380c74490b2
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/models/courses.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -675,30 +763,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2832">
           <caret line="78" column="21" lean-forward="false" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+=======
+    <entry file="file://$PROJECT_DIR$/models/posts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+>>>>>>> 0c8fdf78d71fb6795fd7122ae9aa0380c74490b2
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/routes/user.js">
+    <entry file="file://$PROJECT_DIR$/api/routes/posts.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1203">
           <caret line="90" column="17" lean-forward="false" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
+=======
+        <state relative-caret-position="426">
+          <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="42" />
+>>>>>>> 0c8fdf78d71fb6795fd7122ae9aa0380c74490b2
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/models/users.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+=======
+    <entry file="file://$PROJECT_DIR$/api/routes/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+>>>>>>> 0c8fdf78d71fb6795fd7122ae9aa0380c74490b2
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
           <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+=======
+    <entry file="file://$PROJECT_DIR$/models/courses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+>>>>>>> 0c8fdf78d71fb6795fd7122ae9aa0380c74490b2
           <folding />
         </state>
       </provider>

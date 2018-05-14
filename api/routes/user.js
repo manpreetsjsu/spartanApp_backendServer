@@ -4,6 +4,7 @@ const router=express.Router();
 const User =require('../../models/users');
 const mongoose=require('mongoose');
 const bcrypt=require('bcrypt');
+const jwt = require('jsonwebtoken');
 
 
 router.post('/signup',(req,res,next) =>{
@@ -22,6 +23,7 @@ router.post('/signup',(req,res,next) =>{
                 dob:req.body.dob,
                 email:req.body.email,
                 password:hash,
+                enrolledCourses:[" "]
 
             });
             user.save()
@@ -55,7 +57,7 @@ router.post('/login',(req,res,next) =>{
             }
             if(user.length<1){
                 return res.status(401).json({
-                    message:'Authorization Failed'
+                    message:'Auth Failed'
                 });
 
             }
@@ -67,8 +69,17 @@ router.post('/login',(req,res,next) =>{
                     });
                 }
                 if(result){
+                    const token = jwt.sign({
+                        email:user,
+                        userId:user._id
+                    },
+                        process.env.JWT_KEY,
+                        {expiresIn:"1h"}
+                        );
                     return res.status(200).json({
-                        message:'Auth Successful'
+                        message:'Auth Successful',
+                        token: token,
+                        data:{user}
                     });
                 }
                 res.status(401).json({
