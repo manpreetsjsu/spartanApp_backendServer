@@ -57,6 +57,7 @@ router.post('/login',(req,res,next) =>{
                     message:"Auth Failed"
                 });
             }
+            //was giving error when starting server, hence commmneted this code below, need to check this sometime
             // if(user.length<1){
             //     return res.status(401).json({
             //         message:'Auth Failed'
