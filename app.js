@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 const mongoose= require('mongoose');
 
 
-
+//mongoose connection ...
 //The process.env is where the password for mongoose is coming from. It lives in a file called nodemon.json
 mongoose.connect(
     'mongodb://arshbhatti8:'+

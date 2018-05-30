@@ -23,7 +23,7 @@ router.post('/signup',(req,res,next) =>{
                 dob:req.body.dob,
                 email:req.body.email,
                 password:hash,
-                enrolledCourses:[" "]
+                enrolledCourses:[]
 
             });
             user.save()
@@ -47,6 +47,8 @@ router.post('/signup',(req,res,next) =>{
 
 //Login Process
 router.post('/login',(req,res,next) =>{
+    console.log(req.body);
+    console.log(req.body.email);
     User.findOne({ email: req.body.email})
         .exec()
         .then(user=>{
@@ -55,12 +57,12 @@ router.post('/login',(req,res,next) =>{
                     message:"Auth Failed"
                 });
             }
-            if(user.length<1){
-                return res.status(401).json({
-                    message:'Auth Failed'
-                });
-
-            }
+            // if(user.length<1){
+            //     return res.status(401).json({
+            //         message:'Auth Failed'
+            //     });
+            //
+            // }
 
             bcrypt.compare(req.body.password,user.password,(err,result)=>{
                 if(err){
@@ -106,6 +108,62 @@ router.get('/',(req,res,next)=>{
             })
         })
 });
+
+router.get('/:id',(req,res,next)=>{
+    User
+        .findOne({_id:req.params.id})
+        .exec()
+        .then(docs=>{
+            console.log("this is get request for individual user"+docs);
+            res.status(200).json(docs);
+        })
+        .catch(err=>{
+            console.log(err);
+            res.status(500).json({
+                error:err
+            })
+        })
+});
+
+
+router.patch('/:id',(req,res,next)=>{
+    const id=req.params.id;
+    console.log(req.body);
+    console.log(req.body.enrolledCourses);
+    User.update({_id:id},{$set:{enrolledCourses:req.body.enrolledCourses}})
+        .exec()
+        .then(result=>{
+            console.log(result);
+            res.status(200).json({
+                message:"Course enrolled  successfully",
+                result:result
+            })
+        })
+        .catch(err=>{
+            console.log(err);
+            res.status(500).json({
+                error:err
+             });
+        });
+
+});
+
+router.delete('/',(req,res,next)=>{
+    const id=req.params.id;
+    User.remove()
+        .exec()
+        .then(result=>{
+            res.status(200).json({result});
+            console.log("user deleted");
+        })
+        .catch(err=>{
+            res.status(500).json({
+                error:err
+            })
+        });
+
+});
+
 
 
 module.exports=router;
