@@ -58,12 +58,12 @@ router.post('/login',(req,res,next) =>{
                 });
             }
             //was giving error when starting server, hence commmneted this code below, need to check this sometime
-            // if(user.length<1){
-            //     return res.status(401).json({
-            //         message:'Auth Failed'
-            //     });
-            //
-            // }
+            if(user.length<1){
+                return res.status(401).json({
+                    message:'Auth Failed'
+                });
+
+            }
 
             bcrypt.compare(req.body.password,user.password,(err,result)=>{
                 if(err){
